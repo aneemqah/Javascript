@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset attribute</title>
+  </head>
+  <body>
+    <h1>What is the <i>.dataset </i>attribute</h1>
+    <p>
+      Data attributes are attributes that start with <i>data-</i> that allow you
+      to store additional information in html elements without needing to modify
+      the DOM structure or create additional properties.
+    </p>
+    <!-- Example -->
+    <div id="main" data-user-id="123" data-role="admin" data-dept="Engineering">
+      User Information
+    </div>
+    <script>
+      // 1. Get the element
+      const element = document.getElementById('main');
+      // 2. Access data attributes
+      const userId = element.dataset.userId;
+      const role = element.dataset.role;
+      const dept = element.dataset.dept;
+      // 3 . Log values
+      console.log(`User ID: ${userId}`);
+      console.log(`Role: ${role}`);
+      console.log(`Dept: ${dept}`);
+    </script>
+  </body>
+</html>
