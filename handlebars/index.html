@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HB example</title>
+  </head>
+  <body>
+    <!-- Container where the rendered list will appear -->
+    <div id="list-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- 1. Build HB Template -->
+    <script id="job-roles-template" type="text/x-handlebars-template">
+      <ul>
+        {{#each roles}}
+          <li>{{role}}</li>
+        {{/each}}
+      </ul>
+    </script>
+    <script src="./hb-script.js"></script>
+  </body>
+</html>
