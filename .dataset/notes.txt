@@ -1,0 +1,10 @@
+element.dataset.userId is accessing a custom data attribute from the HTML element. 
+
+Here's how it works:
+
+In the HTML, you have data-user-id="123". This is a custom data attribute (any attribute starting with data-)
+When you access it via JavaScript's dataset property:
+
+The data- prefix is removed
+The hyphenated name is converted to camelCase
+So data-user-id becomes userId in the dataset
