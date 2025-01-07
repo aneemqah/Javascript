@@ -6,7 +6,9 @@ const total = numbers.reduce((accumulater, currentValue) => {
   return accumulater + currentValue;
 }, 0);
 
-console.log(`The total sum is: ${total}`);
+document.querySelector(
+  ".numbers"
+).textContent = `The total number is:  ${total}`;
 
 // 2. Concatenate Strings
 
@@ -15,7 +17,9 @@ const sentence = words.reduce((acc, cur) => {
   return acc + cur;
 });
 
-console.log(`The concatenated sentence ${sentence}`);
+document.querySelector(
+  ".strings"
+).textContent = `The concatenated sentence is: ${sentence}`;
 
 /* 
 
@@ -42,8 +46,11 @@ const fruitCount = fruits.reduce((accumulater, curFruitValue) => {
   return accumulater;
 }, {});
 
-console.log("fruitCount", fruitCount);
-
+document.querySelector(
+  ".count__occurances"
+).textContent = `The fruit count grouped by fruit name : ${JSON.stringify(
+  fruitCount
+)}`;
 /* 
 
 4. Group by property
